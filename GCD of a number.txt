@@ -1,0 +1,17 @@
+declare
+num1 number;  
+num2 number;  
+t  number;  
+begin
+    num1 :=&num1;  
+  
+    num2 :=&num2;  
+   WHILE MOD(num2, num1)!= 0 LOOP  
+        t := MOD(num2, num1);  
+        num2 := num1;  
+        num1 := t;  
+    END LOOP;  
+  
+    dbms_output.Put_line('GCD of ' ||num1  ||' and ' ||num2 ||' is ' ||num1);  
+END;  
+  

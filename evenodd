@@ -1,0 +1,16 @@
+declare
+  	  x number:=&x;
+    begin
+   	 while x<11
+    	loop
+    		if mod(x,2)=0
+    			then
+    			insert into EVEN_ODD(EVEN)
+    			Values(x);
+   			ELSE
+   			Insert into EVEN_ODD(ODD)
+   			Values(x);
+   		END iF;
+   	x:=x+1;
+   	end loop;
+   END;

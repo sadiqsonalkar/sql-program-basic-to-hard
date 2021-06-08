@@ -1,0 +1,13 @@
+declare
+i int:=1;
+area float(10);
+
+begin
+
+for i in 1..10 loop
+	area:=3.14*i*i;
+	insert into circle(num,area) values(i,area);
+	
+end loop;
+end;
+/

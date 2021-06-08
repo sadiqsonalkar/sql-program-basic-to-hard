@@ -1,0 +1,27 @@
+declare
+	n number:=&num;
+	i number;
+	temp number;
+ 
+begin
+	i:=2;
+	temp:=1;
+	
+ 
+	for i in 2..n/2
+	loop
+		if (n mod(i)=0)
+		then
+			temp:=0;
+			exit;
+		end if;
+	end loop;
+ 
+	if temp=1
+	then
+		dbms_output.put_line('prime');
+	else
+		dbms_output.put_line('not prime');
+	end if;
+end;
+/

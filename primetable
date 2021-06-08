@@ -1,0 +1,24 @@
+declare
+	n number:=&num;
+	i number;
+	temp number;
+ 
+begin
+
+	i:=2;
+	temp:=1;
+	for i in 2..n 
+	loop
+		if (n mod (i)=0)
+		then
+			temp:=0;
+			exit;
+ 
+	if temp=1;
+	then
+		insert into prime(primeno) values(i);
+	end if ;
+	end loop;
+
+end;
+/
